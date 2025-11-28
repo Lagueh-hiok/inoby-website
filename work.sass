@@ -1,0 +1,89 @@
+@import "./sass/_collection"
+
+.cases 
+  position: relative
+  margin: 75px 0 150px
+  padding: 2.5rem 0
+  width: 100%
+  height: 100%
+  .bg
+    height: 25% !important
+  .marquees
+    margin-bottom: 45px
+
+  .btns
+    .btn
+      padding: 10px 20px
+      
+.backstage-cases
+  width: 100%
+  .backstage-case
+    display: grid
+    align-items: center
+    grid-template-columns: 15rem 1fr 
+    gap: 40px
+    padding: 10px 20px
+    border-bottom: 1px solid #333
+    .backstage-case_logo,
+    img
+      width: 100%
+    .backstage-case_text
+      font-size: 22px
+      font-weight: bold
+      line-height: 1.5
+    .backstage-case_category
+      font-size: 20px
+      line-height: 1.5
+      color: #888
+    
+    +media-md
+      grid-template-columns: 10rem 1fr 
+      .backstage-case_text
+        font-size: 20px
+      .backstage-case_category
+        font-size: 18px
+    +media-sm
+      gap: 0.25rem 
+      grid-template-columns: 1fr 
+      .backstage-case_logo
+        width: 75%
+        margin: auto
+
+.frontend-cases
+  width: 100%
+  gap: 20px
+  display: grid
+  grid-template-columns: repeat(3, 1fr)
+  .frontend-case
+    background: #fff
+    padding: 10px 5px
+    border-radius: 10px
+    .frontend-case_img
+      width: 100%
+      box-shadow: 0 0 3px #3333
+      border-radius: 10px
+      overflow: hidden
+      margin-bottom: 1rem
+      img
+        transition: transform 0.3s ease
+        width: 100%
+    .frontend-case_info
+      display: flex
+      justify-content: space-between
+      margin-bottom: 0.5rem
+    .frontend-case_title
+      font-size: 20px
+      font-weight: 500
+      line-height: 1.5
+      transition: color 0.3s ease
+    &:hover
+      p
+        color: $fontColor01
+      img
+        transform: scale(1.05)
+    
+  +media-md
+    grid-template-columns: repeat(2, 1fr)
+  +media-sm
+    gap: 0.25rem 
+    grid-template-columns: 1fr 

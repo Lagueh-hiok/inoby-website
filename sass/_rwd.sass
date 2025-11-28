@@ -1,0 +1,26 @@
+// rwd 尺寸
+$bp-xs: 480px
+$bp-sm: 576px
+$bp-md: 768px
+$bp-lg: 992px
+$bp-xl: 1200px
+
+=media-xs
+    @media (max-width: $bp-xs)
+        @content
+
+=media-sm
+  @media (max-width: $bp-sm)
+    @content
+
+=media-md
+  @media (max-width: $bp-md)
+    @content
+
+=media-lg
+  @media (max-width: $bp-lg)
+    @content
+
+=media-xl
+  @media (max-width: $bp-xl)
+    @content

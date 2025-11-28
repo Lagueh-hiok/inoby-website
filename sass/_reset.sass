@@ -1,0 +1,254 @@
+@import "./_color"
+// 基本重新設定
+*
+    margin: 0
+    padding: 0
+    line-height: 1
+
+html
+    width: 100vw
+    overflow-x: hidden
+a, p, span, h1, h2, h3, h4, h5, h6, button
+    margin: 0
+    padding: 0
+    font-family: Helvetica, "Noto Sans TC", sans-serif
+    font-optical-sizing: auto
+    font-weight: normal 
+    font-style: normal
+    color: $mainBlack
+
+li
+    list-style: none
+a
+    position: relative
+    cursor: pointer
+    text-decoration: none
+    transition: color 0.2s ease 
+    &:hover
+        color: $fontColor01
+.link
+    position: relative
+    &::after 
+        content: ""
+        width: 0
+        height: 1px
+        position: absolute
+        left: 0
+        bottom: -0.25rem
+        background-color: $fontColor01
+        transition: width 0.2s ease
+    &:hover::after 
+        width: 100%
+
+button
+    background: none
+    border: none
+    cursor: pointer
+
+
+// 字體大小設定
+h1
+    font-size: 52px
+    font-weight: bold
+h2
+    font-size: 42px
+    font-weight: bold
+h3
+    font-size: 32px
+    font-weight: bold
+a, p, span
+    font-size: 18px
+
++media-lg
+    h1
+        font-size: 42px
+    h2
+        font-size: 32px
+    h3 
+        font-size: 26px
++media-md
+    h1
+        font-size: 36px
+    h2
+        font-size: 28px
+    h3 
+        font-size: 24px
+
+// class 基本設定 (表單、按鈕、背景、主體大小)
+.input_label,
+.input_label p
+    width: 100%
+    display: block
+    margin-bottom: 0.5rem
+
+[data-required] p::after
+    content: "*"
+    color: red
+    font-size: 20px
+
+.input
+    width: 100%
+    padding: 10px 5px
+    margin-bottom: 0.5rem
+    border-radius: 5px
+    box-sizing: border-box
+    border: 1px solid #888
+.submit
+    font-size: 18px
+    font-weight: 400
+    padding: 10px 5rem
+    border: none
+    border-radius: 999px
+    color: #fff
+    background-color: $mainBlue02
+    cursor: pointer
+    transition: background 0.2s ease, color 0.2s ease
+    &:hover
+        color: #fff
+        background-color: $mainBlue03
+
+.btn
+    display: flex
+    justify-content: center
+    align-items: center
+    font-size: 18px
+    font-weight: 400
+    padding: 10px 20px
+    border-radius: 999px
+    cursor: pointer
+    background-color: #fff
+    transition: background 0.2s ease, color 0.2s ease
+.btns
+    display: flex
+    flex-wrap: wrap
+    gap: 10px
+    margin: 1.5rem 0
+    .btn
+        // width: 175px
+        padding: 10px 50px
+        color: $fontColor02
+        background-color: #fff
+        border: 2px solid $fontColor02
+        transition: background 0.1s ease, color 0.1s ease
+        &:hover
+            color: #fff
+            background-color: $fontColor02
+            // filter: saturate(50%)
+    .select-btn
+        background-color: $fontColor02 !important
+        color: #fff !important
+    
+    +media-md
+        margin: 1rem 0 
+        gap: 8px 
+        .btn
+            padding: 5px 0
+            font-size: 16px
+.lines
+    position: absolute
+    width: 75%
+    height: 100%
+    top: 0
+    left: 50%
+    transform: translateX(-50%)
+    display: flex
+    justify-content: space-between
+    z-index: -9998
+    .line
+        width: 1.5px
+        height: 100%
+        background-color: rgba( $mainBlack , 0.05)
+        +media-sm
+            &:nth-last-child(1)
+                display: none
+            
+.container
+    max-width: 1280px
+    width: 80%
+    margin: auto
+
+.bg
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background: linear-gradient(180deg, $bgBlue01, #fff)
+    z-index: -9999
+
+
+// 標題設定
+.title
+    margin-bottom: 1.5rem
+    p
+        font-size: 36px
+        font-weight: bold
+        margin-bottom: 0.75rem
+
+// 文字設定
+.text
+    h2
+        font-size: 36px
+        margin-bottom: 1rem
+    p
+        line-height: 1.75
+        margin-bottom: 1.5rem
+
+
+// 頁碼設定
+.paginationjs
+    display: flex
+    justify-content: center
+    margin-bottom: 40px
+.paginationjs-pages
+    margin: 20px 0
+    ul
+        display: flex
+    .paginationjs-page,
+    .paginationjs-prev,
+    .paginationjs-next
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 40px 
+        height: 40px
+        margin: 0 5px
+        border-radius: 999px
+        background-color: #ddd
+        cursor: pointer
+        transition: background 0.2s ease
+        &:hover
+            background-color: #aaa
+
+    .disabled
+        background-color: #eee
+        &:hover
+            background-color: #eee
+    .active
+        background-color: $mainBlue02 !important
+        a
+            cursor: auto
+            color: #fff
+
+// 跑馬燈
+$marqueeSec: 0.25s
+$marqueeEase: ease-in
+.marquees
+    width: 100%
+    margin-top: 30px
+    overflow: hidden
+.marquee
+    display: flex
+    margin-top: 20px
+    .marquee-items
+        display: flex
+        flex-wrap: nowrap
+    .marquee-item
+        margin: 0 20px
+        filter: grayscale(100%)
+        opacity: 0.85
+        transition: filter $marqueeSec $marqueeEase, opacity $marqueeSec $marqueeEase
+        
+    &:hover .marquee-item
+        filter: grayscale(0%)
+        opacity: 1

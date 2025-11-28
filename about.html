@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1.3.8/dist/lenis.css">
+</head>
+<body>
+    <!-- 導覽列 -->
+    <nav class="nav">
+        <div class="nav_container container">
+            <a  href="./index.html" class="logo" title="回首頁">
+                <img src="./img/Logo.png" alt="艾諾比 LOGO">
+            </a>
+            <ul class="nav_links">
+                <li class="nav_link link" >
+                    <a href="./about.html" title="公司介紹">公司介紹</a>
+                </li>
+                <li class="nav_link link" >
+                    <a href="./work.html" title="履約實績">履約實績</a>
+                </li>
+                <li class="nav_link link" >
+                    <a href="./service.html" title="技術服務">技術服務</a>
+                </li>
+                <li class="nav_link link" >
+                    <a href="./product.html" title="產品介紹">產品介紹</a>
+                </li>
+                <li class="nav_link link" >
+                    <a href="./contact.html" title="聯絡我們">聯絡我們</a>
+                </li>
+                <li class="">
+                    <button class="">EN</button>
+                    <span>/</span>
+                    <button class="">JP</button>
+                </li>
+            </ul>
+            <div class="nav-menu_icon nav-menu_swicth"></div>
+            <div class="nav-menu">
+                <div class="nav-menu_content">
+                    <ul class="nav-menu_links">
+                        <li class="nav-menu_link link logo" >
+                            <img src="./img/Logo.png" alt="艾諾比 LOGO">
+                        </li>
+                        <li class="nav-menu_link link" >
+                            <a href="./about.html" title="公司介紹">公司介紹</a>
+                        </li>
+                        <li class="nav-menu_link link" >
+                            <a href="./work.html" title="履約實績">履約實績</a>
+                        </li>
+                        <li class="nav-menu_link link" >
+                            <a href="./service.html" title="技術服務">技術服務</a>
+                        </li>
+                        <li class="nav-menu_link link" >
+                            <a href="./product.html" title="產品介紹">產品介紹</a>
+                        </li>
+                        <li class="nav-menu_link link" >
+                            <a href="./contact.html" title="聯絡我們">聯絡我們</a>
+                        </li>
+                    </ul>
+                    <div class="nav-menu_info">
+                        <p>電話: +886-2-7729-7391</p>
+                        <p>地址:台北市松山區復興北路367號8樓</p>
+                        
+                        <p class="copyright">I-noy &COPY; 2025 All Rights Reserved.</p>
+                    </div>
+                </div>
+                <div class="nav-menu_bg nav-menu_swicth"></div>
+            </div>
+        </div>
+    </nav>
+    <!-- 介紹 -->
+    <section class="about">
+        <div class="container">
+            <!-- 介紹說明 -->
+            <div class="header">
+                <div class="introduce">
+                    <div class="title">
+                        <p>About</p>
+                        <h1>公司介紹</h1>
+                    </div>
+                    <div class="text">
+                        <p>艾諾比數位資訊股份有限公司，團隊主要由一群擁有豐富學經歷的資深前後端工程師及專案經理組成，秉持「永續經營」的信念，我們將「誠信」、「專業」與「創新」視為核心價值。主要致力於協助企業及政府機關導入最新的雲端服務技術──無伺服器架構（Serverless）。</p>
+                        <p>近年執行之專案橫跨如醫療衛生、金融服務、交通運輸等多領域，此外，本公司期望提供客戶視覺性和設計性兼具的系統軟體，於是特別聘請得獎的美術設計相關人才加入系統整合部門，期待在我們建置的系統中，讓使用者拋去系統軟體只能硬邦邦的既定印象。</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="img">
+                        <img src="./img/about/code-review.gif" alt="裝飾動畫">
+                    </div>
+                </div>
+            </div>
+            <!-- 公司架構 -->
+            <div class="architecture">
+                <h3>公司組織架構</h3>
+                <div class="img">
+                    <img src="./img/about/architecture.png" alt="公司組織架構">
+                </div>
+            </div>
+        </div>
+        <!-- 地理位置 -->
+        <div class="location">
+            <div class="container">
+                <h3>公司分布位置</h3>
+                <div class="btns">
+                    <button data-location="tw" class="location-btn btn select-btn">台灣 - 台北</button>
+                    <button data-location="jp" class="location-btn btn">日本 - 東京</button>
+                    <button data-location="vn" class="location-btn btn">越南 - 胡志明</button>
+                    <button data-location="us" class="location-btn btn">美國 - 西雅圖</button>
+                </div>
+                <div class="position">
+                    <div data-location="tw" class="point show-point"></div>
+                    <div data-location="jp" class="point"></div>
+                    <div data-location="vn" class="point"></div>
+                    <div data-location="us" class="point"></div>
+                    <img src="./img/about/world map.png" alt="地圖">
+                </div>
+            </div>
+        </div>
+        <!-- 分公司資訊 -->
+        <div class="branch-info">
+            <div class="container">
+                <div class="map">
+                    <img src="./img/about/google map.png" alt="地圖">
+                </div>
+                <div class="branch-content">
+                    <h3 class="title">
+                        分公司資訊
+                    </h3>
+                    <div class="branch-item">
+                        <div class="branch-location">
+                            <p>台北總部</p>
+                        </div>
+                        <div class="branch-detail">
+                            <p>台北市松山區復興北路367號8樓</p>
+                            <p>電話: +886-2-7729-7391</p>
+                        </div>
+                    </div>
+                    <div class="branch-item">
+                        <div class="branch-location">
+                            <p>胡志明</p>
+                        </div>
+                        <div class="branch-detail">
+                            <p>Level 14, Saigon Centre 1, No. 65 Le Loi Street, Ben Nghe Ward, District 1, Ho Chi Minh City 700000, Vietnam</p>
+                            <p>電話: +84-28-3971-9777</p>
+                        </div>
+                    </div>
+                    <div class="branch-item">
+                        <div class="branch-location">
+                            <p>澳洲</p>
+                        </div>
+                        <div class="branch-detail">
+                            <p>410 Concord Road, Rhodes, New South Wales Sydney NSW 2138  Australia </p>
+                            <p>電話: +61-4-2287-4925</p>
+                        </div>
+                    </div>
+                    <div class="branch-item">
+                        <div class="branch-location">
+                            <p>西雅圖</p>
+                        </div>
+                        <div class="branch-detail">
+                            <p>1201 Second Avenue Seattle WA 98101 USA </p>
+                            <p>電話 +1 206-310-2433</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="branch-bg"></div>
+        </div>
+        <!-- 背景 -->
+        <div class="lines">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <div class="bg"></div>
+    </section>
+
+    <!-- 頁尾 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-wraps">
+                <div class="footer-wrap">
+                    <a href="#">
+                        <img src="./img/Logo.png" alt="艾諾比數位資訊股份有限公司">
+                    </a>
+                    <ul class="footer_links">
+                        <li class="footer_link link">
+                            <a href="./about.html" title="公司介紹">公司介紹</a>
+                        </li>
+                        <li class="footer_link link">
+                            <a href="./work.html" title="履約實績">履約實績</a>
+                        </li>
+                        <li class="footer_link link">
+                            <a href="./service.html" title="技術服務">技術服務</a>
+                        </li>
+                        <li class="footer_link link">
+                            <a href="./product.html" title="產品介紹">產品介紹</a>
+                        </li>
+                        <li class="footer_link link">
+                            <a href="./contact.html" title="聯絡我們">聯絡我們</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-wrap">
+                    <div class="footer-contant">
+                        <h2>總公司資訊</h2>
+                        <p>台北: 台北市松山區復興北路367號8樓<br/>
+                            電話: +886-2-7729-7391</p>
+                    </div>
+                    <div class="footer-contant">
+                        <h2>分公司資訊</h2>
+                        <p>西雅圖: 1201 Second Avenue Seattle WA 98101 USA<br/>
+                            電話 +1 206-310-2433</p>
+                        <p>胡志明: Level 14, Saigon Centre 1, No. 65 Le Loi Street, Ben Nghe Ward, District 1, Ho Chi Minh City 700000<br/>
+                            電話: +84-28-3971-9777</p>
+                        <p>澳洲: 410 Concord Road, Rhodes, New South Wales Sydney NSW 2138<br/>
+                            電話: +61-4-2287-4925</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-info">
+                <div class="footer-info-copyright">
+                    <p>艾諾比數位資訊股份有限公司 &COPY; 2025 All Rights Reserved.</p>
+                </div>
+                <div class="footer-info_other">
+                    <a href="./credits.html" title="素材來源">素材來源</a>
+                    <a href="" title="服務條款">服務條款</a>
+                    <a href="" title="隱私權政策">隱私權政策</a>
+                </div>
+            </div>
+        </div>
+        <div class="bg"></div>
+    </footer>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/lenis@1.3.8/dist/lenis.min.js"></script> 
+    <script type="text/javascript" src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/about.js"></script>
+</body>
+</html>

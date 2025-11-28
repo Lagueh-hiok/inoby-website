@@ -1,0 +1,355 @@
+@import "./sass/_collection"
+
+// main 區域開始
+.main
+    margin-top: 75px
+    width: 100%
+    border-bottom: 1px solid $mainBlack
+    .bg
+        position: relative
+        width: 100%
+        max-height: calc( 100vh - 75px )
+        top: 0
+        left: 0
+        overflow: hidden
+        filter: brightness(70%)
+        video
+            margin: 0 auto
+            border: none
+        img
+            position: absolute
+            max-width: 500px
+            right: 0
+            bottom: 0
+            z-index: 1
+        +media-lg
+            img
+                transform: translateX(25%)
+        +media-md
+            img
+                max-width: 400px
+                transform: translateX(50%)
+    .main-title
+        position: absolute
+        top: 50%
+        transform: translateY( calc( -50% + 45px )) // 減去按鈕的高度
+        h1
+            color: #fff
+            font-weight: 550
+            margin-bottom: 0.5rem
+        h2
+            color: #fff
+            font-size: 48px
+            font-weight: 750
+            margin-bottom: 1.5rem
+        .btn
+            width: 200px
+            font-weight: 600
+            color: $fontColor01
+            background-color: #fff
+
+// 服務領域
+.service
+    position: relative
+    width: 100%
+    padding: 45px 0
+    .container
+        width: 80%
+        margin: 45px auto 80px
+    .marquee
+        width: 90%
+        margin: 0 auto
+        padding: 20px 0
+        white-space: nowrap
+        overflow: hidden
+        background-color: #fff
+        box-shadow: 0 0 4px rgba($mainBlack , 0.25)
+        border-radius: 999px
+        +media-sm
+            padding: 1rem 0
+        .marquee-item
+            font-size: 24px
+    .service_title
+        margin: 80px auto 40px
+        text-align: center
+        p
+            margin-top: 10px
+            color: $mainBlack
+        +media-lg
+            margin: 40px auto
+    .service-btn
+        width: 200px
+        padding: 15px 0
+        margin-top: 25px
+        float: right
+        background-color: #2969A5
+        span
+            text-align: center
+            color: #fff
+        +media-sm
+            width: 250px
+            float: none
+            margin: 1.5rem auto
+    .service-wrap
+        width: 100%
+        display: grid
+        gap: 10px
+        grid-template-columns: repeat(4, 1fr)
+        margin: 0 auto
+        .service-wrap_item
+            width: 100%
+            padding: 40px 0
+            text-align: center
+            border-radius: 5px
+            box-shadow: 0 0 5px rgba($mainBlack , 0.25)
+            background-color: #fff
+        p
+            font-size: 26px
+            font-weight: 600
+            color: $mainBlack
+        // RWD
+        +media-lg
+            grid-template-columns: repeat(3, 1fr)
+        +media-md
+            grid-template-columns: repeat(2, 1fr)
+            p
+                font-size: 20px
+        // +media-sm
+        //     grid-template-columns: repeat(1, 1fr)
+    .bg
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        background: linear-gradient(180deg, $bgBlue01, #fff)
+        z-index: -9999
+// 承接案子
+.cases
+    position: relative
+    width: 100%
+    padding: 80px 0
+    display: flex
+    align-items: center
+    flex-direction: column
+    .container
+        width: 90%
+    .text
+        text-align: center
+
+    .counts
+        width: 80%
+        display: flex
+        margin: 0 auto
+    .count-item
+        width: calc( 100% / 3 )
+        text-align: center
+        margin-top: 50px
+        .count-number
+            font-size: 52px
+            font-weight: 600
+        p
+            font-size: 26px
+            font-weight: 500
+            margin-top: 10px
+        +media-md
+            margin-top: 25px
+            .count-number
+                font-size: 46px
+            p
+                font-size: 24px
+        +media-sm
+            margin-top: 35px
+            .count-number
+                font-size: 36px
+            p
+                font-size: 20px
+
+    .marquee
+        +media-lg
+            img
+                height: 85px
+        +media-md
+            img
+                height: 75px
+        +media-sm
+            img
+                height: 65px
+    .btn
+        width: 300px
+        background-color: #2969A5
+        padding: 15px 0
+        margin-top: 30px
+        span
+            text-align: center
+            color: #fff
+
+// 履約實績
+.works
+    position: relative
+    width: 100%
+    padding: 4rem 0 150px
+    .container
+        width: 90%
+        display: flex
+        align-items: center
+        flex-direction: column
+    .works-wraps
+        display: grid
+        gap: 40px
+        grid-template-columns: repeat(2, 1fr)
+        .works-wrap
+            width: 100%
+    .works-wrap_contact
+        margin-bottom: 1.5rem
+        h2
+            font-weight: 650
+        p
+            margin-top: 10px
+            line-height: 1.5
+    .works_btn
+        width: 300px
+        background-color: $mainBlue01
+        padding: 15px 0
+        margin-top: 30px
+        span
+            text-align: center
+            color: #fff
+        &:hover
+            background-color: $mainBlue03
+    
+    +media-lg
+        padding-top: 2rem
+        .works-wraps
+            grid-template-columns: repeat(1, 1fr)
+    +media-md
+
+.works-card[data-slot="0"]
+    grid-area: a
+.works-card[data-slot="1"]
+    grid-area: b
+.works-card[data-slot="2"]
+    grid-area: c
+.works-card[data-slot="3"]
+    grid-area: d
+.works-card[data-slot="4"]
+    grid-area: e
+.works-card[data-slot="5"]
+    grid-area: f
+.works-card[data-slot="6"]
+    grid-area: g
+.works-card[data-slot="７"]
+    grid-area: h
+
+.works-left-grid,
+.works-right-grid
+    display: grid
+    gap: 20px
+    grid-template-columns: 1fr 1fr
+.works-left-grid
+    grid-template-areas: "a b" "c c"
+.works-right-grid
+    grid-template-areas: "d d" "e f" "g h"
+
+.works-card
+    margin-bottom: 1rem
+    .img
+        width: 100%
+        overflow: hidden
+        box-shadow: 0 0 3px #3333
+        border-radius: 15px
+        img
+            width: 100%
+            height: auto
+            object-fit: contain
+            transition: transform 0.3s ease
+    .info
+        width: 100%
+        display: flex
+        justify-content: space-between
+        align-items: center
+    h3,
+    .date,
+    .category
+        margin-top: 0.5rem
+        line-height: 1.2
+        transition: color 0.3s ease
+    h3
+        font-size: 22px
+        font-weight: 500
+    &:hover
+        h3,
+        .date,
+        .category
+            color: $fontColor01
+        img
+            transform: scale(1.05)
+
+
+// 聯絡我們
+$contactHeight: 100vh
+$contactEllipse: 80rem
+
+.contact
+    position: relative
+    transform: translateY(-100px)
+    width: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+    .container
+        width: 85%
+        height: $contactHeight
+        display: grid
+        gap: 20px
+        grid-template-columns: repeat(2, 1fr)
+        align-items: center
+        transform: translateY(-25px) //視覺平衡
+        +media-lg
+            height: $contactHeight
+        +media-md
+            height: auto
+            padding: 6rem 0
+            grid-template-columns: repeat(1, 1fr)
+    .bg
+        position: absolute
+        width: 100%
+        height: 100%
+        top: 0
+        left: 0
+        background-image: linear-gradient(180deg, transparent 50%, $mainBlue02 50%), radial-gradient(ellipse $contactEllipse 50% at center, $mainBlue02 99.5%, transparent 100%)
+        background-position: center center
+        z-index: -9999
+
+    .contact_img,
+    .contact_contact
+        width: 50%
+        margin: auto
+    .contact_contant
+        padding: 0 40px
+        h2, p
+            color: #fff
+            line-height: 1.5
+        h2
+            font-weight: 650
+        p
+            margin-top: 15px
+        .btn
+            float: right
+            margin-top: 40px
+            padding: 10px 50px
+            background-color: #fff
+    .contact_img
+        aspect-ratio: 16 / 9
+        width: 100%
+        height: auto
+        display: flex
+        justify-content: center
+        align-items: center
+        // overflow: hidden
+        border-radius: 15px
+        img
+            // width: 100%
+            height: 100%
+            object-fit: cover
+            object-position: center

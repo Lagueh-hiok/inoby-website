@@ -1,0 +1,90 @@
+@import "./_color"
+$contactHeight: 100vh
+// 頁尾
+$footerRadius: 50px
+$footerHeight: 60vh
+$footerOffest: 150px
+.footer
+    position: relative
+    width: 100%
+    display: flex
+    justify-content: center
+    align-items: flex-end
+    z-index: 1
+    .container
+        transform: translateY( -0px)
+        width: 85%
+    .footer-wraps
+        display: grid
+        gap: 20px
+        grid-template-columns: 1fr 2fr
+        align-items: center
+        .footer-wrap:nth-child(1)
+            width: 100%
+        .footer-wrap:nth-child(2)
+            width: 100%
+            height: auto
+            background-color: #fff
+            padding: 65px 50px 50px
+            box-sizing: border-box
+            border-radius: 25px
+        
+        h2
+            font-size: 30px
+        p
+            font-size: 18px
+            margin-top: 20px
+            line-height: 1.5
+        a
+            font-size: 24px
+            font-weight: 500
+            line-height: 1.5
+
+    .footer_links
+        margin-top: 50px
+        .footer_link
+            margin-top: 10px
+    .footer-contant:last-child
+        margin-top: 40px
+    img
+        width: 300px
+        height: auto
+
+    .footer-info
+        display: flex
+        justify-content: space-between
+        margin-top: 40px
+        padding: 5px 0
+        border-top: 1px solid $mainBlack
+        & > *
+            margin-top: 20px
+            font-size: 16px
+        p, a
+            margin: 0 5px
+    .footer-info-other,
+    .footer-info-copyright
+        margin: 20px 0
+    .footer-info-copyright
+        display: flex
+    .footer-info-sns
+    .bg
+        position: absolute
+        top: -$footerOffest 
+        left: 0
+        width: 100%
+        height: calc( $contactHeight + ($footerOffest / 2) - 50px  )
+        background-color: $bgBlue01
+        border-radius: $footerRadius $footerRadius 0 0
+        z-index: -9999
+    +media-lg
+        margin-top: -75px
+        .footer_links
+            display: none
+        .footer-wraps
+            grid-template-columns: 1fr
+            .footer-wrap
+                padding: 45px 15px 15px
+        .footer-info
+            margin-top: 1rem
+        .bg
+            top: -75px

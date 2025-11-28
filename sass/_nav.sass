@@ -1,0 +1,121 @@
+@import "./_color"
+// 導覽列開始
+.nav 
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    padding: 15px 0
+    background-color: #fff
+    box-shadow: 0 4px 5px rgba($mainBlack , 0.1)
+    z-index: 9999
+
+    .nav_container 
+        display: flex
+        width: 90%
+        box-sizing: border-box
+        align-items: center
+        justify-content: space-between
+        .logo img
+            width: 120px
+            height: auto
+        .nav_links
+            display: flex
+            .nav_link
+                margin-right: 20px
+
+
+        .nav-menu_icon
+            display: none
+            position: relative
+            width: 30px
+            height: 30px
+            cursor: pointer
+            z-index: 9999
+            &::after,
+            &::before
+                content: ""
+                position: absolute
+                width: 100%
+                height: 2px
+                top: 50%
+                left: 0
+                background-color: $mainBlack
+                transition: transform 0.3s ease
+            &::after
+                transform: translateY(calc(-50% - 8px))
+            &::before
+                transform: translateY(calc(-50% + 8px))
+        .open
+            &::after 
+                transform: translateY(-50%) rotate(45deg)
+            &::before
+                transform: translateY(-50%) rotate(-45deg)
+        +media-md
+            width: 90%
+            .nav_links
+                display: none
+            .nav-menu_icon
+                display: block
+        
+        .nav-menu
+            position: fixed
+            width: 100%
+            height: 100vh
+            opacity: 0
+            pointer-events: none
+            top: 0
+            left: 0
+            transition: opacity 0.3s ease
+            z-index: 9998
+            .nav-menu_content
+                display: flex
+                justify-content: space-between
+                flex-direction: column
+                position: absolute
+                top: 10px
+                right: 10px
+                max-width: 300px
+                width: 100%
+                height: calc( 100% - 20px )
+                padding: 3rem 2.5rem 1.5rem
+                box-sizing: border-box
+                border-radius: 10px
+                background-color: #fff
+                transition: transform 0.5s ease
+                transform: translateX(110%)
+                z-index: 9999
+            .nav-menu_info
+                padding-top: 1rem
+                border-top: 1px solid #888
+                p
+                    font-size: 16px
+                    font-weight: 300
+                    color: #888
+                    margin-bottom: 0.5rem
+                .copyright
+                    margin-top: 1.2rem
+                    font-size: 14px
+            .nav-menu_link
+                margin: 1rem 0
+                &:nth-child(1)
+                    margin-bottom: 1.5rem
+            .nav-menu_bg
+                position: absolute
+                pointer-events: none
+                opacity: 0
+                top: 0
+                left: 0
+                width: 100%
+                height: 100%
+                cursor: pointer
+                transition: opacity 0.3s ease
+                background-color: rgba(0, 0, 0, 0.5)
+        .active
+            opacity: 1
+            pointer-events: all
+            .nav-menu_bg
+                pointer-events: all
+                opacity: 1
+            .nav-menu_content
+                transform: translateX(0)

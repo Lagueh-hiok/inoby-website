@@ -1,0 +1,63 @@
+@import "./sass/_collection"
+
+.service
+  position: relative
+  margin: 75px 0 150px
+  padding: 2.5rem 0 8rem
+  .bg
+    height: 25%
+  .title
+    margin-bottom: 3rem
+.services
+  width: 90%
+  margin: auto
+  +media-md
+    width: 100%
+.service-item
+  display: grid
+  grid-template-columns: 3rem 1fr
+  gap: 40px
+  padding: 1.5rem 2rem
+  box-sizing: border-box
+  border-bottom: 2px solid #333
+  &:nth-child(1)
+    border-top: 2px solid #333
+  .service-item_number
+    font-size: 52px
+    font-weight: 900
+    text-align: center
+    color: transparent
+    -webkit-text-stroke: 2.5px #333
+  .service-item_header
+    display: flex
+    align-items: center
+    justify-content: space-between
+    font-size: 52px
+    margin-bottom: 1rem
+    .service-item_title
+      font-size: 32px
+      font-weight: bold
+    .service-item_icon
+      cursor: pointer
+      display: none
+    .active
+      display: block
+  .service-item_text
+    width: 100% !important
+    line-height: 1.5
+  
+  // 手機板
+  .service-item_header_sm
+    display: none
+    margin-bottom: 0.25rem
+    .service-item_info
+      display: flex
+      align-items: center
+      gap: 0.75rem
+
+  +media-md
+    width: 100%
+    gap: 10px
+    grid-template-columns: 1fr
+    .service-item_number
+      display: none

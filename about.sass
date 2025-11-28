@@ -1,0 +1,199 @@
+@import "./sass/_collection"
+
+.about
+  position: relative
+  margin-top: 75px
+  padding-top: 2.5rem
+
+  .bg
+    height: 25%
+
+.header
+  width: 100%
+  margin-bottom: 8rem
+  display: grid
+  grid-template-columns: repeat(2, 1fr)
+  align-items: center
+  .img  
+    aspect-ratio: 16 / 9
+    max-width: 450px
+    background-color: #fff
+    width: 100%
+    border-radius: 20px
+    overflow: hidden
+    margin: auto
+    box-shadow: 5px 5px 25px rgba(black, 0.1)
+    display: flex
+    justify-content: center
+    align-items: center
+    transform: translateY(20px) // 視覺平衡
+    flex: 1
+    img
+      max-width: 400px
+      width: 100%
+  +media-md
+    margin-bottom: 4rem 
+    grid-template-columns: 1fr
+
+.architecture
+  width: 100%
+  h3
+    margin-bottom: 1.5rem
+  .img
+    width: 80%
+    margin: auto
+    img
+      width: 100%
+  +media-md
+    .img
+      width: 100%
+
+.location
+  position: relative
+  width: 100%
+  bottom: -150px
+  margin-top: -75px
+  padding-top: 3rem
+  padding-bottom: 150px
+  background: #e5faff
+  border-radius: 50px 50px 0 0
+  img
+    width: 100%
+  h3
+    padding-bottom: 1rem
+    color: $fontColor01
+    border-bottom: 1px solid #333
+    
+  .position
+    position: relative
+    width: 100%
+    height: 100%
+    .point
+      position: absolute
+      top: 0
+      left: 0
+      width: 12px
+      height: 12px
+      transform-origin: center
+      transform: translate(-50%, -50%)
+      background-color: #fff 
+      border-radius: 50%
+      transition: width 0.2s ease, height 0.2s ease
+      border: 2px solid $fontColor01
+      cursor: pointer
+      &::after
+        content: ""
+        pointer-events: none
+        opacity: 0
+        position: absolute
+        white-space: nowrap
+        top: 50%
+        right: 0%
+        padding-left: 200% 
+        font-size: 26px
+        font-weight: bold
+        color: $fontColor01
+        text-shadow: -1px -1px 0 #fff, -1px 1px 0 #fff, 1px -1px 0 #fff, 1px 1px 0px #fff
+        transform: translate(100%, -100%)
+        border-bottom: 2px solid $fontColor01
+        transition: opacity 0.2s ease
+      &:hover
+        width: 20px
+        height: 20px
+    [data-location="tw"]
+      top: 51.4%
+      left: 36.8%
+      &::after
+        content: "台灣總部"
+
+    [data-location="jp"]
+      top: 42%
+      left: 42%
+      &::after
+        content: "日本分部"
+
+    [data-location="vn"]
+      top: 59.2%
+      left: 32.7%
+      &::after
+        content: "越南分部"
+
+    [data-location="us"]
+      top: 38%
+      left: 68.6%
+      &::after
+        content: "美國分部"
+
+    .show-point
+      width: 18px
+      height: 18px
+      cursor: auto
+      z-index: 999
+      &::after
+        pointer-events: none
+        opacity: 1
+    
+  +media-md
+    .btn
+        width: 150px
+        padding: 10px 0
+    .position 
+      .point
+        &::after
+          font-size: 20px
+.branch-info
+  position: relative
+  padding: 150px 0 200px
+  z-index: 1
+  .branch-bg
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 110%
+    transform: translateY(-25px)
+    background: radial-gradient(ellipse 100rem 40rem at center, $mainBlue02 99.8%, transparent 100%)
+    z-index: -9998
+
+  .map
+    width: 90%
+    // height: 400px
+    overflow: hidden
+    border-radius: 40px
+    margin: 0 auto 1.5rem
+    img
+      width: 100%
+  .branch-content
+    width: 80%
+    margin: auto
+    h3, p
+      color: #fff
+      line-height: 1.5
+    h3
+      font-size: 38px
+      padding-bottom: 1.5rem
+      margin-bottom: 1.5rem
+      border-bottom: 1px solid #fff
+    .branch-item
+      display: grid
+      grid-template-columns: 5rem 2fr
+      gap: 40px
+      padding-bottom: 1.5rem
+      margin-bottom: 1.5rem
+      border-bottom: 1px solid #fff
+  
+  +media-lg
+    .branch-bg
+      background: radial-gradient(ellipse 80rem 35rem at center, $mainBlue02 99.8%, transparent 100%)
+    .map 
+      border-radius: 20px
+      height: auto
+      
+    .branch-content
+      width: 90%
+  +media-md
+    .map
+      width: 100%
+    .branch-content
+      width: 100%
+    
