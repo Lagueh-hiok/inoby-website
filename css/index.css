@@ -965,9 +965,8 @@ a, p, span {
 .contact .container {
   width: 85%;
   height: 100vh;
-  display: grid;
+  display: flex;
   gap: 20px;
-  grid-template-columns: repeat(2, 1fr);
   align-items: center;
   transform: translateY(-25px);
 }
@@ -980,22 +979,13 @@ a, p, span {
   .contact .container {
     height: auto;
     padding: 6rem 0;
-    grid-template-columns: repeat(1, 1fr);
+    flex-direction: column;
   }
-}
-.contact .bg {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background-image: linear-gradient(180deg, transparent 50%, #2072A4 50%), radial-gradient(ellipse 80rem 50% at center, #2072A4 99.5%, transparent 100%);
-  background-position: center center;
-  z-index: -9999;
 }
 .contact .contact_img,
 .contact .contact_contact {
-  width: 50%;
+  flex: 1;
+  width: 100%;
   margin: auto;
 }
 .contact .contact_contant {
@@ -1031,9 +1021,19 @@ a, p, span {
   border-radius: 15px;
 }
 .contact .contact_img img {
-  height: 100%;
+  width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
+}
+.contact .bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(180deg, transparent 50%, #2072A4 50%), radial-gradient(ellipse 80rem 50% at center, #2072A4 99.5%, transparent 100%);
+  background-position: center center;
+  z-index: -9999;
 }

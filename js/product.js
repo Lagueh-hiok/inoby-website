@@ -21,7 +21,7 @@ function productItem(item) {
             </div>
             <div class="product-item_text">
               <p>${item.content}</p>  
-              <p>${item.cases ?? ""}</p>  
+              ${item.cases ? `<p>相關案例: ${item.cases}</p>`: ""}  
             </div>
         </div>
       </div>

@@ -695,6 +695,10 @@ a, p, span {
 }
 .product-item_toggle .product-item_text p {
   line-height: 1.5;
+  margin-bottom: 1.5rem;
+}
+.product-item_toggle .product-item_text p:nth-last-child(1) {
+  margin-bottom: 0;
 }
 @media (max-width: 576px) {
   .product-item_toggle {
