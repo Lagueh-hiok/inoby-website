@@ -23,7 +23,7 @@ a
     position: relative
     cursor: pointer
     text-decoration: none
-    transition: color 0.2s ease 
+    transition: color 0.5s ease 
     &:hover
         color: $fontColor01
 .link
@@ -31,13 +31,15 @@ a
     &::after 
         content: ""
         width: 0
-        height: 1px
+        height: 2px
         position: absolute
-        left: 0
-        bottom: -0.25rem
+        // left: 0
+        right: 0
+        top: 100%
         background-color: $fontColor01
         transition: width 0.2s ease
     &:hover::after 
+        left: 0
         width: 100%
 
 button
@@ -116,8 +118,11 @@ a, p, span
     padding: 10px 20px
     border-radius: 999px
     cursor: pointer
-    background-color: #fff
+    background-color: $mainBlue01
     transition: background 0.2s ease, color 0.2s ease
+    &:hover
+        color: #fff
+        background-color: $fontColor02
 .btns
     display: flex
     flex-wrap: wrap

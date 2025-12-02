@@ -47,6 +47,9 @@
             font-weight: 600
             color: $fontColor01
             background-color: #fff
+            transition: background 0.3s ease
+            &:hover
+                background-color: $bgBlue02
 
 // 服務領域
 .service
@@ -82,7 +85,9 @@
         padding: 15px 0
         margin-top: 25px
         float: right
-        background-color: #2969A5
+        transition: background 0.3s ease
+        &:hover
+            background-color: $mainBlue03
         span
             text-align: center
             color: #fff
@@ -114,8 +119,6 @@
             grid-template-columns: repeat(2, 1fr)
             p
                 font-size: 20px
-        // +media-sm
-        //     grid-template-columns: repeat(1, 1fr)
     .bg
         position: absolute
         top: 0
@@ -177,9 +180,11 @@
                 height: 65px
     .btn
         width: 300px
-        background-color: #2969A5
         padding: 15px 0
         margin-top: 30px
+        transition: background 0.3s ease
+        &:hover
+            background-color: $mainBlue03
         span
             text-align: center
             color: #fff
@@ -339,6 +344,9 @@ $contactEllipse: 80rem
             margin-top: 40px
             padding: 10px 50px
             background-color: #fff
+            transition: background 0.3s ease
+            &:hover
+                background-color: $bgBlue02
     .contact_img
         aspect-ratio: 16 / 9
         width: 100%

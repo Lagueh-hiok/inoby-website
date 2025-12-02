@@ -68,20 +68,37 @@ fetch("./json/backstageCase.json")
 
 // 前端資料 基本卡片
 function renderFrontendCase(item) {
-  return `
-    <div class="frontend-case">
-      <div class="frontend-case_img">
-          <img src="${item.imgurl}" alt="${item.title}">
+  return item.link ?
+    `
+      <a href="${item.link}" class="frontend-case" title="${item.title + "-連結"}">
+        <div class="frontend-case_img">
+            <img src="${item.imgurl}" alt="${item.title}">
+        </div>
+        <div class="frontend-case_content">
+            <div class="frontend-case_info">
+                <p class="frontend-case_date">${item.date || "未提供日期"}</p>
+                <p class="frontend-case_category">${item.category}</p>
+            </div>
+            <p class="frontend-case_title">${item.title}</p>
+        </div>
+      </a>
+    `
+    :
+    `
+      <div class="frontend-case">
+        <div class="frontend-case_img">
+            <img src="${item.imgurl}" alt="${item.title}">
+        </div>
+        <div class="frontend-case_content">
+            <div class="frontend-case_info">
+                <p class="frontend-case_date">${item.date || "未提供日期"}</p>
+                <p class="frontend-case_category">${item.category}</p>
+            </div>
+            <p class="frontend-case_title">${item.title}</p>
+        </div>
       </div>
-      <div class="frontend-case_content">
-          <div class="frontend-case_info">
-              <p class="frontend-case_date">${item.date || "未提供日期"}</p>
-              <p class="frontend-case_category">${item.category}</p>
-          </div>
-          <p class="frontend-case_title">${item.title}</p>
-      </div>
-    </div>
-  `;
+    `
+    
 };
 
 // 前端系統實例-渲染內容

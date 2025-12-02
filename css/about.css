@@ -28,7 +28,7 @@ a {
   position: relative;
   cursor: pointer;
   text-decoration: none;
-  transition: color 0.2s ease;
+  transition: color 0.5s ease;
 }
 a:hover {
   color: #3D4A84;
@@ -40,14 +40,15 @@ a:hover {
 .link::after {
   content: "";
   width: 0;
-  height: 1px;
+  height: 2px;
   position: absolute;
-  left: 0;
-  bottom: -0.25rem;
+  right: 0;
+  top: 100%;
   background-color: #3D4A84;
   transition: width 0.2s ease;
 }
 .link:hover::after {
+  left: 0;
   width: 100%;
 }
 
@@ -145,8 +146,12 @@ a, p, span {
   padding: 10px 20px;
   border-radius: 999px;
   cursor: pointer;
-  background-color: #fff;
+  background-color: #2969A5;
   transition: background 0.2s ease, color 0.2s ease;
+}
+.btn:hover {
+  color: #fff;
+  background-color: #2969A5;
 }
 
 .btns {
@@ -312,7 +317,10 @@ a, p, span {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 15px 0;
+  height: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #fff;
   box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);
   z-index: 9999;
@@ -491,6 +499,7 @@ a, p, span {
   line-height: 1.5;
 }
 .footer .footer_links {
+  width: 75%;
   margin-top: 50px;
 }
 .footer .footer_links .footer_link {
