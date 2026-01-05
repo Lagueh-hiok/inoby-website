@@ -22,6 +22,10 @@ function renderbackstageCase(item) {
     </div>
     `;
 };
+// 後端搜尋按鈕
+function backstageBtn(cat) {
+  return `<button data-cat="${cat}" class="filter-backstage-btn btn">${cat}</button>`
+}
 
 // 後端系統實例-渲染內容
 function renderbackstageList(data) {
@@ -40,6 +44,13 @@ fetch("./json/backstageCase.json")
       pageSize: 4,
       callback: renderbackstageList,
     });
+
+    // 生成按鈕
+    const allCategoryList = cases.flatMap(item => getCategoryList(item.category));
+    const nuiqueCategories = [...new Set(allCategoryList)]
+    nuiqueCategories.forEach((item)=>{
+      $(".backstage-btns").append(backstageBtn(item))
+    })
 
     // 綁定按鈕觸發
     $(".filter-backstage-btn").on("click", function() {
@@ -76,7 +87,7 @@ function renderFrontendCase(item) {
         </div>
         <div class="frontend-case_content">
             <div class="frontend-case_info">
-                <p class="frontend-case_date">${item.date || "未提供日期"}</p>
+                ${item.date ? `<p class="frontend-case_date">${item.date}</p>` : ""}
                 <p class="frontend-case_category">${item.category}</p>
             </div>
             <p class="frontend-case_title">${item.title}</p>
@@ -91,7 +102,7 @@ function renderFrontendCase(item) {
         </div>
         <div class="frontend-case_content">
             <div class="frontend-case_info">
-                <p class="frontend-case_date">${item.date || "未提供日期"}</p>
+                ${item.date ? `<p class="frontend-case_date">${item.date}</p>` : ""}
                 <p class="frontend-case_category">${item.category}</p>
             </div>
             <p class="frontend-case_title">${item.title}</p>
@@ -100,6 +111,11 @@ function renderFrontendCase(item) {
     `
     
 };
+// 前端搜尋按鈕
+function frontendBtn(cat) {
+  return `<button data-cat="${cat}" class="filter-frontend-btn btn">${cat}</button>`
+}
+
 
 // 前端系統實例-渲染內容
 function renderFrontendList(data) {
@@ -119,6 +135,12 @@ fetch("./json/frontendCase.json")
       callback: renderFrontendList,
     });
 
+    // 生成類別按鈕
+    const allCategoryList = cases.flatMap(item => getCategoryList(item.category));
+    const nuiqueCategories = [...new Set(allCategoryList)]
+    nuiqueCategories.forEach((item)=>{
+      $(".frontend-btns").append(frontendBtn(item))
+    })
 
     // 綁定按鈕觸發
     $(".filter-frontend-btn").on("click", function() {

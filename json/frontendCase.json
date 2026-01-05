@@ -1,143 +1,104 @@
 [
   {
     "id": 1,
+    "imgurl": "./img/case/終身學習券試辦發放系統.png",
+    "title": "國立臺灣科學教育博物館國立臺灣科學教育館114-115年終身學習劵試辦發放系統",
+    "date": "",
+    "link": "https://lle.moe.edu.tw/ticket?type=pass",
+    "category": "電子票券、亞馬遜無伺服器架構、教育"
+  },
+  {
+    "id": 2,
     "imgurl": "./img/case/臺北市職能發展學院.png",
     "title": "臺北市職能發展學院新職業訓練管理系統",
-    "date": "2025/11",
-    "link": "test",
-    "category": "教育、設計"
+    "link": "https://www.tvdi.gov.taipei/",
+    "date": "",
+    "category": "職業訓練、教育訓練、資料移轉"
   },
   {
-    "id": 1,
-    "imgurl": "./img/case/臺北市職能發展學院.png",
-    "title": "國立臺灣師範大學2022臺灣跨域美感教育國際論壇報名系統網站",
-    "date": "2025/12",
-    "category": "教育"
+    "id": 3,
+    "imgurl": "./img/case/交通部民用航空局台東航空站航務管理放行及收費系統.png",
+    "title": "交通部民用航空局台東航空站航務管理放行及收費系統",
+    "date": "",
+    "category": "航空業、收費、資料移轉"
   },
   {
-    "id": 1,
-    "imgurl": "./img/case/臺北市職能發展學院.png",
-    "title": "國立臺灣師範大學2022臺灣跨域美感教育國際論壇報名系統網站",
-    "date": "2025/13",
-    "category": "教育、後臺架設"
+    "id": 4,
+    "imgurl": "./img/case/臺北榮民總醫院教學部教學部圖書館主網頁改版更新.png",
+    "title": "臺北榮民總醫院教學部教學部圖書館主網頁改版更新",
+    "link": "https://wd.vghtpe.gov.tw/lib/Index.action",
+    "date": "",
+    "category": "全台唯一智慧化報表系統、場地預約、架站器、資料移轉"
   },
   {
-    "id": 1,
-    "imgurl": "./img/case/臺北市職能發展學院.png",
-    "title": "臺北市職能發展學院新職業訓練管理系統",
-    "date": "2025/14",
-    "category": "教育"
+    "id": 5,
+    "imgurl": "./img/case/雲林縣衛生局健康地圖網站建置案.png",
+    "title": "雲林縣衛生局健康地圖網站建置案",
+    "link": "https://healthmap.ylshb.gov.tw/",
+    "date": "",
+    "category": "圖資、無障礙標章"
   },
   {
-    "id": 1,
-    "imgurl": "./img/case/臺北市職能發展學院.png",
-    "title": "臺北市職能發展學院新職業訓練管理系統",
-    "date": "2025/15",
-    "category": "教育"
+    "id": 6,
+    "imgurl": "./img/case/雲林縣衛生局健康管理系統暨愛老眼鏡系統.png",
+    "title": "雲林縣衛生局健康管理系統暨愛老眼鏡系統",
+    "link": "https://vision.ylshb.gov.tw/",
+    "date": "",
+    "category": "健康管理、核銷、資料移轉"
   },
   {
-    "id": 1,
-    "imgurl": "./img/case/臺北市職能發展學院.png",
-    "title": "臺北市職能發展學院新職業訓練管理系統",
-    "date": "2025/16",
-    "category": "教育"
+    "id": 7,
+    "imgurl": "./img/case/桃園市立內壢國民中學桃園市高中多元入學適性宣導整合網站採購建置案.png",
+    "title": "桃園市立內壢國民中學桃園市高中多元入學適性宣導整合網站採購建置案",
+    "link": "https://12basic.tyc.edu.tw/",
+    "date": "",
+    "category": "架站器、教育、整合、無障礙標章"
   },
   {
-    "id": 1,
-    "imgurl": "./img/case/臺北市職能發展學院.png",
-    "title": "臺北市職能發展學院新職業訓練管理系統",
-    "date": "2025/13",
-    "category": "教育"
+    "id": 8,
+    "imgurl": "./img/case/屏東縣政府原住民處113年第一屆屏東縣原住民族運動會資訊服務系統.png",
+    "title": "屏東縣政府原住民處113年第一屆屏東縣原住民族運動會資訊服務系統",
+    "link": "https://www.indigenoussports.net/en",
+    "date": "",
+    "category": "運動會、報名、亞馬遜無伺服器架構"
   },
   {
-    "id": 1,
-    "imgurl": "./img/case/臺北市職能發展學院.png",
-    "title": "臺北市職能發展學院新職業訓練管理系統",
-    "date": "2025/14",
-    "category": "教育"
+    "id": 9,
+    "imgurl": "./img/case/新北市立板橋國民中學115年全國身心障礙國民運動會大會資訊網站系統建置委託專業服務.png",
+    "title": "新北市立板橋國民中學115年全國身心障礙國民運動會大會資訊網站系統建置委託專業服務",
+    "link": "https://www.sport115ntpc.com/",
+    "date": "",
+    "category": "運動會、報名、無障礙標章"
   },
   {
-    "id": 1,
-    "imgurl": "./img/case/臺北市職能發展學院.png",
-    "title": "臺北市職能發展學院新職業訓練管理系統",
-    "date": "2025/15",
-    "category": "教育"
+    "id": 10,
+    "imgurl": "./img/case/新北市政府衛生局電競王網站維運與線上遊戲開發.png",
+    "title": "新北市政府衛生局電競王網站維運與線上遊戲開發",
+    "link": "https://health-school.health.ntpc.gov.tw/",
+    "date": "",
+    "category": "2024年法國設計獎 概念設計/展覽及活動類別金獎、IP 角色、遊戲開發"
   },
   {
-    "id": 1,
-    "imgurl": "./img/case/臺北市職能發展學院.png",
-    "title": "臺北市職能發展學院新職業訓練管理系統",
-    "date": "2025/16",
-    "category": "教育"
+    "id": 11,
+    "imgurl": "./img/case/鈞易賢股份有限公司TCG Store 卡牌交易網站.png",
+    "title": "鈞易賢股份有限公司TCG Store 卡牌交易網站",
+    "link": "https://www.tcgstore.com.tw/",
+    "date": "",
+    "category": "交易網站、金流介接、亞馬遜無伺服器架構"
   },
   {
-    "id": 1,
-    "imgurl": "./img/case/臺北市職能發展學院.png",
-    "title": "臺北市職能發展學院新職業訓練管理系統",
-    "date": "2025/15",
-    "category": "教育"
+    "id": 12,
+    "imgurl": "./img/case/台灣大車隊股份有限公司派車系統與生活大管家.png",
+    "title": "台灣大車隊股份有限公司派車系統與生活大管家",
+    "link": "https://www.55688life.com.tw/",
+    "date": "",
+    "category": "金流介接"
   },
   {
-    "id": 1,
-    "imgurl": "./img/case/臺北市職能發展學院.png",
-    "title": "臺北市職能發展學院新職業訓練管理系統",
-    "date": "2025/16",
-    "category": "教育"
-  },
-  {
-    "id": 1,
-    "imgurl": "./img/case/臺北市職能發展學院.png",
-    "title": "臺北市職能發展學院新職業訓練管理系統",
-    "date": "2025/15",
-    "category": "教育"
-  },
-  {
-    "id": 1,
-    "imgurl": "./img/case/臺北市職能發展學院.png",
-    "title": "臺北市職能發展學院新職業訓練管理系統",
-    "date": "2025/16",
-    "category": "教育"
-  },
-  {
-    "id": 1,
-    "imgurl": "./img/case/臺北市職能發展學院.png",
-    "title": "臺北市職能發展學院新職業訓練管理系統",
-    "date": "2025/15",
-    "category": "教育"
-  },
-  {
-    "id": 1,
-    "imgurl": "./img/case/臺北市職能發展學院.png",
-    "title": "臺北市職能發展學院新職業訓練管理系統",
-    "date": "2025/16",
-    "category": "教育"
-  },
-  {
-    "id": 1,
-    "imgurl": "./img/case/臺北市職能發展學院.png",
-    "title": "臺北市職能發展學院新職業訓練管理系統",
-    "date": "2025/15",
-    "category": "教育"
-  },
-  {
-    "id": 1,
-    "imgurl": "./img/case/臺北市職能發展學院.png",
-    "title": "臺北市職能發展學院新職業訓練管理系統",
-    "date": "2025/16",
-    "category": "教育、全部"
-  },
-  {
-    "id": 1,
-    "imgurl": "./img/case/臺北市職能發展學院.png",
-    "title": "臺北市職能發展學院新職業訓練管理系統",
-    "date": "2025/15",
-    "category": "教育"
-  },
-  {
-    "id": 1,
-    "imgurl": "./img/case/臺北市職能發展學院.png",
-    "title": "臺北市職能發展學院新職業訓練管理系統",
-    "date": "2025/16",
-    "category": "教育"
+    "id": 13,
+    "imgurl": "./img/missimg/missImg.png",
+    "title": "永慶房屋仲介股份有限公司線上360環景看房系統雲端導入建置案",
+    "date": "",
+    "category": "亞馬遜無伺服器架構"
   }
 ]

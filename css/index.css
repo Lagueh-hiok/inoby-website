@@ -945,6 +945,10 @@ a, p, span {
   font-size: 22px;
   font-weight: 500;
 }
+.works-card .category {
+  margin-top: 0.75rem;
+  color: #555555;
+}
 .works-card:hover h3,
 .works-card:hover .date,
 .works-card:hover .category {

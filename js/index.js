@@ -70,12 +70,12 @@ if (caseScroll) {
 // --------------------- 履約實績 ----------------------
 function worksItem(item, index) {
     return item.link ? 
-          `<a href="${item.link}" class="works-card" data-slot="${index}" title="${item.title + "-連結"}">
+          `<a href="${item.link}" class="works-card" data-slot="${index}" title="${item.title}">
             <div class="img">
                 <img src="${item.imgurl}" alt="">
             </div>
             <div class="info">
-                <p class="date">${item.date}</p>
+                ${ item.data ? `<p class="date">${item.date}</p>` : ""}
                 <p class="category">${item.category}</p>
             </div>
             <h3>${item.title}</h3>

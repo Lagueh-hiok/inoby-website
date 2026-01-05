@@ -594,10 +594,11 @@ a, p, span {
 .backstage-cases .backstage-case .backstage-case_logo,
 .backstage-cases .backstage-case img {
   width: 100%;
+  margin: auto;
 }
 .backstage-cases .backstage-case .backstage-case_text {
   font-size: 22px;
-  font-weight: bold;
+  font-weight: 500;
   line-height: 1.5;
 }
 .backstage-cases .backstage-case .backstage-case_category {

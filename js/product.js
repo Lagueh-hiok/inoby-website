@@ -2,10 +2,11 @@ function productItem(item) {
   const id = String(item.id).padStart(2, 0);
   return `
     <div class="product-item">
-      <div class="product-item_img">
-        <img src="${item.imgurl ?? ""}" alt="aaa" />
-      </div>  
-      <div class="product-item_toggle">
+      ${item.imgurl ? `
+        <div class="product-item_img">
+          <img src="${item.imgurl}" alt="${item.title}" />
+        </div>` : ""}
+      <div class="product-item_toggle" style="${item.imgurl ? "" : "width: 75%; margin: auto"}">
         <p class="product-item_number">${id}</p>
         <div class="product-item_content">
             <div class="product-item_header">
