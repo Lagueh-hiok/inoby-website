@@ -6,20 +6,16 @@ const numbers = [
     {
         startNum: 1,
         currentNum: 1,
-        endNum: 6,
+        endNum: 50,
     }, {
         startNum: 1,
         currentNum: 1,
-        endNum: 20,
-    }, {
-        startNum: 1,
-        currentNum: 1,
-        endNum: 40
+        endNum: 100,
     },
 ];
 
 const startTime = Date.now(); //開始時間
-const duration = 120; //每一個單位+1的時候需要的時間
+const duration = 15; //每一個單位+1的時候需要的時間
 
 // 開關控制
 let animationStart = false;

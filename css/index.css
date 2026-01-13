@@ -304,6 +304,9 @@ a, p, span {
 .marquee .marquee-item {
   margin: 0 20px;
   filter: grayscale(100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
   opacity: 0.85;
   transition: filter 0.25s ease-in, opacity 0.25s ease-in;
 }
@@ -653,6 +656,9 @@ a, p, span {
 }
 .service .marquee .marquee-item {
   font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .service .service_title {
   margin: 80px auto 40px;
@@ -701,7 +707,6 @@ a, p, span {
   text-align: center;
   border-radius: 5px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
-  background-color: #fff;
 }
 .service .service-wrap p {
   font-size: 26px;
@@ -748,7 +753,9 @@ a, p, span {
 .cases .counts {
   width: 80%;
   display: flex;
-  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 4rem;
 }
 .cases .count-item {
   width: 33.3333333333%;

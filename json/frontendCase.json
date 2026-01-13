@@ -4,7 +4,7 @@
     "imgurl": "./img/case/終身學習券試辦發放系統.png",
     "title": "國立臺灣科學教育博物館國立臺灣科學教育館114-115年終身學習劵試辦發放系統",
     "date": "",
-    "link": "https://lle.moe.edu.tw/ticket?type=pass",
+    "link": " https://www.lifelong-learning-voucher.com/",
     "category": "電子票券、亞馬遜無伺服器架構、教育"
   },
   {
@@ -16,17 +16,10 @@
     "category": "職業訓練、教育訓練、資料移轉"
   },
   {
-    "id": 3,
-    "imgurl": "./img/case/交通部民用航空局台東航空站航務管理放行及收費系統.png",
-    "title": "交通部民用航空局台東航空站航務管理放行及收費系統",
-    "date": "",
-    "category": "航空業、收費、資料移轉"
-  },
-  {
     "id": 4,
     "imgurl": "./img/case/臺北榮民總醫院教學部教學部圖書館主網頁改版更新.png",
     "title": "臺北榮民總醫院教學部教學部圖書館主網頁改版更新",
-    "link": "https://wd.vghtpe.gov.tw/lib/Index.action",
+    "link": "https://library.vghtpe.gov.tw/",
     "date": "",
     "category": "全台唯一智慧化報表系統、場地預約、架站器、資料移轉"
   },
