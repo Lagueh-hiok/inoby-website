@@ -14,14 +14,21 @@
         overflow: hidden
         filter: brightness(70%)
         video
+            width: 100%
             margin: 0 auto
             border: none
+        +media-lg
+            video
+                width: auto
         img
             position: absolute
-            max-width: 500px
+            max-width: 750px
             right: 0
             bottom: 0
             z-index: 1
+        +media-xxl
+            img
+                max-width: 500px
         +media-lg
             img
                 transform: translateX(25%)
@@ -42,6 +49,11 @@
             font-size: 48px
             font-weight: 750
             margin-bottom: 1.5rem
+        +media-md
+            h1
+                font-size: 28px
+            h2
+                font-size: 36px
         .btn
             width: 200px
             font-weight: 600
@@ -55,10 +67,10 @@
 .service
     position: relative
     width: 100%
-    padding: 45px 0
+    padding: 60px 0
     .container
         width: 80%
-        margin: 45px auto 80px
+        margin: 120px auto
     .marquee
         width: 90%
         margin: 0 auto
@@ -66,7 +78,7 @@
         white-space: nowrap
         overflow: hidden
         background-color: #fff
-        box-shadow: 0 0 4px rgba($mainBlack , 0.25)
+        box-shadow: 0 0 4px rgba($mainBlue01 , 0.25)
         border-radius: 999px
         +media-sm
             padding: 1rem 0
@@ -109,7 +121,7 @@
             padding: 40px 0
             text-align: center
             border-radius: 5px
-            box-shadow: 0 0 5px rgba($mainBlack , 0.25)
+            box-shadow: 4px 4px 10px rgba($mainBlue03 , 0.25)
             
         p
             font-size: 26px
@@ -122,13 +134,15 @@
             grid-template-columns: repeat(2, 1fr)
             p
                 font-size: 20px
+        +media-sm
+            grid-template-columns: 1fr
     .bg
         position: absolute
         top: 0
         left: 0
         width: 100%
         height: 100%
-        background: linear-gradient(180deg, $bgBlue01, #fff)
+        background: url("../img/bg.png") center center/ cover, linear-gradient(180deg, $bgBlue01, #fff)
         z-index: -9999
 // 承接案子
 .cases
@@ -256,10 +270,17 @@
     display: grid
     gap: 20px
     grid-template-columns: 1fr 1fr
+    +media-sm
+        grid-template-columns: 1fr 
 .works-left-grid
     grid-template-areas: "a b" "c c"
+    +media-sm
+        grid-template-areas: "a" "b" "c"
 .works-right-grid
     grid-template-areas: "d d" "e f" "g h"
+    +media-sm
+        grid-template-areas: "d" "e" "f" "g" "h"
+    
 
 .works-card
     margin-bottom: 1rem
@@ -323,6 +344,8 @@ $contactEllipse: 80rem
             height: auto
             padding: 6rem 0
             flex-direction: column
+        +media-sm
+            width: 90%
     .contact_img,
     .contact_contact
         flex: 1
@@ -345,6 +368,8 @@ $contactEllipse: 80rem
             transition: background 0.3s ease
             &:hover
                 background-color: $bgBlue02
+        +media-sm
+            padding: 0
     .contact_img
         aspect-ratio: 16 / 9
         width: 100%

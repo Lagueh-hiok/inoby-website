@@ -4,6 +4,7 @@ $bp-sm: 576px
 $bp-md: 768px
 $bp-lg: 992px
 $bp-xl: 1200px
+$bp-xxl: 1500px
 
 =media-xs
     @media (max-width: $bp-xs)
@@ -23,4 +24,8 @@ $bp-xl: 1200px
 
 =media-xl
   @media (max-width: $bp-xl)
+    @content
+
+=media-xxl
+  @media (max-width: $bp-xxl)
     @content

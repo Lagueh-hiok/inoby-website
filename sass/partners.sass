@@ -1,0 +1,117 @@
+@import "./sass/_collection"
+.cases 
+  position: relative
+  margin: 75px 0 150px
+  padding-bottom: 2.5rem
+  width: 100%
+  height: 100%
+  .btns
+    .btn
+      padding: 10px 20px
+
+
+
+.list-top
+  display: flex
+  justify-content: space-between
+  border-bottom: 1px solid $border
+  margin-bottom: 1rem
+.select-wrap
+  margin-bottom: 1rem
+
+
+
+.lists
+  width: 100%
+  clear: both
+  display: flex
+  flex-wrap: wrap
+  gap: 20px
+  +media-sm
+    gap: 20px
+.list-item 
+  width: calc( 50% - 10px )
+  display: flex
+  align-items: center
+  gap: 20px
+  padding: 20px 20px
+  transition: 0.2s ease
+  background-color: #fff
+  border-radius: 10px
+  box-sizing: border-box
+  &:hover 
+    background: $bg-hover  
+  +media-sm
+    flex-direction: column
+    padding: 10px 5px
+  +media-lg
+    width: 100%
+  .logo 
+    max-width: 200px
+    width: 100%
+    height: 80px
+    object-fit: contain
+    flex-shrink: 0
+  .content 
+    h3 
+      font-size: 18px
+      font-weight: 400
+      color: $text-grey
+    .title 
+      font-size: 20px
+      font-weight: 700
+      line-height: 1.4
+      margin: 4px 0 8px
+    .desc 
+      font-size: 16px
+      line-height: 1.4
+      color: $text-light
+    .tags 
+      margin-top: 8px
+      span 
+        display: inline-block
+        padding: 4px 10px
+        margin-right: 8px
+        font-size: 16px
+        border: 1px solid $mainGrey
+        border-radius: 20px
+
+
+.website-cases
+  width: 100%
+  gap: 20px
+  display: grid
+  grid-template-columns: repeat(3, 1fr)
+  .website-case
+    background: #fff
+    padding: 10px 5px
+    border-radius: 10px
+    .website-case_img
+      width: 100%
+      box-shadow: 0 0 3px #3333
+      border-radius: 10px
+      overflow: hidden
+      margin-bottom: 1rem
+      img
+        transition: transform 0.3s ease
+        width: 100%
+    .website-case_info
+      display: flex
+      justify-content: space-between
+      margin-bottom: 0.5rem
+    .website-case_title
+      font-size: 20px
+      font-weight: 500
+      line-height: 1.5
+      transition: color 0.3s ease
+    &:hover
+      p
+        color: $fontColor01
+      img
+        transform: scale(1.05)
+    
+  +media-md
+    grid-template-columns: repeat(2, 1fr)
+  +media-sm
+    gap: 0.25rem 
+    grid-template-columns: 1fr 

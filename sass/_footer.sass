@@ -1,5 +1,5 @@
 @import "./_color"
-$contactHeight: 100vh
+$contactHeight: 50vh
 // 頁尾
 $footerRadius: 50px
 $footerHeight: 60vh
@@ -12,22 +12,24 @@ $footerOffest: 150px
     align-items: flex-end
     z-index: 1
     .container
-        transform: translateY( -0px)
+        transform: translateY( -50px)
         width: 85%
+        +media-sm
+            width: 90%
+
     .footer-wraps
         display: grid
         gap: 20px
         grid-template-columns: 1fr 2fr
         align-items: center
-        .footer-wrap:nth-child(1)
+        .footer-wrap
             width: 100%
-        .footer-wrap:nth-child(2)
-            width: 100%
-            height: auto
-            background-color: #fff
-            padding: 65px 50px 50px
             box-sizing: border-box
-            border-radius: 25px
+            &:nth-child(2)
+                height: auto
+                background-color: #fff
+                padding: 65px 50px 50px
+                border-radius: 25px
         
         h2
             font-size: 30px
@@ -48,8 +50,13 @@ $footerOffest: 150px
     .footer-contant:last-child
         margin-top: 40px
     img
-        width: 300px
+        max-width: 300px
+        width: 100%
         height: auto
+        object-fit: contain
+        +media-sm
+            max-width: 200px
+            margin: auto
 
     .footer-info
         display: flex
@@ -83,9 +90,13 @@ $footerOffest: 150px
             display: none
         .footer-wraps
             grid-template-columns: 1fr
-            .footer-wrap
-                padding: 45px 15px 15px
+        .footer-wrap
+            padding: 45px 20px 20px !important
+                    
         .footer-info
             margin-top: 1rem
         .bg
             top: -75px
+    +media-sm
+        .footer-info
+            flex-direction: column-reverse

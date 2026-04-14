@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/index.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_forward" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet">
@@ -22,6 +23,11 @@
     <meta property="og:locale" content="zh-TW">
     <meta property="og:type" content="website">
     <meta property="og:description" content="艾諾比數位資訊股份有限公司，團隊主要由一群擁有豐富學經歷的資深前後端工程師及專案經理組成，秉持「永續經營」的信念，我們將「誠信」、「專業」與「創新」視為核心價值">
+    <style>
+        .material-symbols-outlined{
+            margin-left: 0.5rem;
+        }
+    </style>
 </head>
 <body>
     <!-- 導覽列 -->
@@ -35,14 +41,14 @@
                     <a href="./about.html" title="公司介紹">公司介紹</a>
                 </li>
                 <li class="nav_link link" >
-                    <a href="./work.html" title="履約實績">履約實績</a>
+                    <a href="./partners.html" title="合作夥伴">合作夥伴</a>
                 </li>
                 <li class="nav_link link" >
                     <a href="./service.html" title="技術服務">技術服務</a>
                 </li>
-                <li class="nav_link link" >
+                <!-- <li class="nav_link link" >
                     <a href="./product.html" title="產品介紹">產品介紹</a>
-                </li>
+                </li> -->
                 <li class="nav_link link" >
                     <a href="./contact.html" title="聯絡我們">聯絡我們</a>
                 </li>
@@ -63,14 +69,14 @@
                             <a href="./about.html" title="公司介紹">公司介紹</a>
                         </li>
                         <li class="nav-menu_link link" >
-                            <a href="./work.html" title="履約實績">履約實績</a>
+                            <a href="./partners.html" title="合作夥伴">合作夥伴</a>
                         </li>
                         <li class="nav-menu_link link" >
                             <a href="./service.html" title="技術服務">技術服務</a>
                         </li>
-                        <li class="nav-menu_link link" >
+                        <!-- <li class="nav-menu_link link" >
                             <a href="./product.html" title="產品介紹">產品介紹</a>
-                        </li>
+                        </li> -->
                         <li class="nav-menu_link link" >
                             <a href="./contact.html" title="聯絡我們">聯絡我們</a>
                         </li>
@@ -94,13 +100,15 @@
                 <h2>艾諾比數位資訊有限公司</h2>
                 <a href="./contact.html" class="btn">
                     <span>聯絡我們</span>
-                    <span>→</span>
+                    <span class="material-symbols-outlined">arrow_forward</span>
                 </a>
             </div>
         </div>
         <div class="bg">
             <img src="./img/head.png" alt="臉">
-            <video src="./img/bgAnimation.mov" autoplay loop></video>
+            <video id="heroVideo" poster="./img/fallback.webp" preload="auto" autoplay playsinline muted loop >
+                <source src="./img/bgAnimation.mp4" type="video/mp4">
+            </video>
         </div>
     </section>
     <!-- 服務領域 -->
@@ -143,7 +151,7 @@
             </ul>
             <a href="./service.html" class="service-btn btn" title="查看更多資訊">
                 <span>查看更多資訊</span>
-                <span>-></span>
+                <span class="material-symbols-outlined">arrow_forward</span>
             </a>
         </div>
         <div class="lines">
@@ -262,14 +270,14 @@
             </div>
         </div>
         <a 
-            href="./work.html" 
+            href="./partners.html" 
             data-aos="fade-up"
             data-aos-duration="750"
             data-aos-delay="50"
             class="btn"
         >
-            <span>查看更多履約實績</span>
-            <span>-></span>
+            <span>查看更多合作夥伴</span>
+            <span class="material-symbols-outlined">arrow_forward</span>
         </a>
         <div class="lines">
             <div class="line"></div>
@@ -279,7 +287,7 @@
             <div class="line"></div>
         </div>
     </section>
-    <!-- 履約實績 -->
+    <!-- 合作夥伴 -->
     <section class="works">
         <div
         data-aos="fade-up"
@@ -290,7 +298,7 @@
                 <!-- 左側版面 -->
                 <div class="works-wrap">
                     <div class="works-wrap_contact">
-                        <h2>履約實績</h2>
+                        <h2>合作夥伴</h2>
                         <p>不論是功能強大的企業系統、沉浸式的虛擬實境，還是引領品牌形象的網站與行銷方案，我們以專業技術、創意思維與精準執行，我們專為不同產業打造專屬的數位解決方案。</p>
                     </div>
                     <div class="works-left-grid"></div>
@@ -300,9 +308,9 @@
                     <div class="works-right-grid"></div>
                 </div>
             </div>
-            <a href="./work.html" class="works_btn btn">
-                <span>查看更多履約實績</span>
-                <span>-></span>
+            <a href="./partners.html" class="works_btn btn">
+                <span>查看更多合作夥伴</span>
+                <span class="material-symbols-outlined">arrow_forward</span>
             </a>
         </div>
         <div class="lines">
@@ -332,7 +340,7 @@
                 <p>💬 立即與我們對話，讓您的想法從概念起航，邁向實現！</p>
                 <a href="./contact.html" class="btn">
                     <span>聯絡我們</span>
-                    <span>-></span>
+                    <span class="material-symbols-outlined">arrow_forward</span>
                 </a>
             </div>
         </div>
@@ -354,7 +362,7 @@
                             <a href="./about.html" title="公司介紹">公司介紹</a>
                         </li>
                         <li class="footer_link link">
-                            <a href="./work.html" title="履約實績">履約實績</a>
+                            <a href="./partners.html" title="合作夥伴">合作夥伴</a>
                         </li>
                         <li class="footer_link link">
                             <a href="./service.html" title="技術服務">技術服務</a>

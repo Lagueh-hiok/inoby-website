@@ -1,0 +1,133 @@
+[
+  {
+    "id": 1,
+    "unit": "新北市政府衛生局",
+    "logo": "./img/caseLogo/新北市政府衛生局.png",
+    "content": "新北市衛生局智能健康管理系統",
+    "desc": "建置健康管理與資料整合平台，支援預約、核銷與健康紀錄管理流程，提升整體服務效率。",
+    "category": ["醫療", "政府", "平台建置"]
+  },
+  {
+    "id": 2,
+    "unit": "文化部",
+    "logo": "./img/caseLogo/文化部.png",
+    "content": "文化部全國歌仔戲活動報名評分系統建置案",
+    "desc": "建立活動報名與評分管理系統，整合報名流程與評選機制，提升活動執行效率。",
+    "category": ["文化", "政府", "平台建置"]
+  },
+  {
+    "id": 3,
+    "unit": "屏東縣原民處",
+    "logo": "./img/caseLogo/屏東縣原民處.png",
+    "content": "屏東縣原住民族運動會資訊服務系統",
+    "desc": "建置運動會報名與資訊整合平台，支援賽事管理與活動資訊發布。",
+    "link": "https://www.indigenoussports.net/en",
+    "category": ["運動", "政府", "平台建置"]
+  },
+  {
+    "id": 4,
+    "unit": "桃園市教育局",
+    "logo": "./img/caseLogo/桃園市教育局.png",
+    "content": "多元入學適性宣導整合網站",
+    "desc": "整合高中入學資訊與宣導內容，提供學生與家長清楚易用的查詢平台。",
+    "category": ["教育", "政府", "無障礙"]
+  },
+  {
+    "id": 5,
+    "unit": "台北市職能發展學院",
+    "logo": "./img/caseLogo/台北市職能發展學院.png",
+    "content": "職業訓練管理系統",
+    "desc": "開發職業訓練課程與學員管理系統，整合報名、課程與行政作業流程。",
+    "link": "https://www.tvdi.gov.taipei/",
+    "category": ["教育", "政府", "系統整合"]
+  },
+  {
+    "id": 7,
+    "unit": "台東航空站",
+    "logo": "./img/caseLogo/台東航空站.png",
+    "content": "航務管理放行及收費系統",
+    "desc": "開發航務作業與收費管理系統，優化機場日常營運與資料處理流程。",
+    "category": ["交通", "政府", "系統整合"]
+  },
+  {
+    "id": 9,
+    "unit": "臺北榮民總醫院教學部",
+    "logo": "./img/caseLogo/臺北榮民總醫院教學部.png",
+    "content": "教學部圖書館網站改版",
+    "desc": "進行網站介面優化與功能重構，提升資料查詢效率與使用體驗。",
+    "link": "https://library.vghtpe.gov.tw/",
+    "category": ["醫療", "政府", "網站建置"]
+  },
+  {
+    "id": 10,
+    "unit": "雲林衛生局",
+    "logo": "./img/caseLogo/雲林衛生局.png",
+    "content": "健康地圖網站",
+    "desc": "建置健康資源地圖平台，整合醫療據點資訊，方便民眾快速查詢。",
+    "link": "https://healthmap.ylshb.gov.tw/",
+    "category": ["醫療", "政府", "無障礙"]
+  },
+  {
+    "id": 11,
+    "unit": "雲林衛生局",
+    "logo": "./img/caseLogo/雲林衛生局.png",
+    "content": "健康管理暨愛老眼鏡系統",
+    "desc": "整合健康管理與補助核銷流程，提升服務效率與資料整合能力。",
+    "link": "https://vision.ylshb.gov.tw/",
+    "category": ["醫療", "政府", "平台建置"]
+  },
+  {
+    "id": 12,
+    "unit": "桃園市教育局",
+    "logo": "./img/caseLogo/桃園市教育局.png",
+    "content": "高中多元入學宣導整合網站",
+    "desc": "整合多元入學資訊與宣導內容，提升資訊可讀性與使用體驗。",
+    "link": "https://12basic.tyc.edu.tw/",
+    "category": ["教育", "政府", "無障礙"]
+  },
+  {
+    "id": 13,
+    "unit": "新北市政府衛生局",
+    "logo": "./img/caseLogo/新北市政府衛生局.png",
+    "content": "全國身心障礙運動會資訊網站",
+    "desc": "建置大型運動會資訊平台，整合報名、賽程與活動資訊。",
+    "link": "https://www.sport115ntpc.com/",
+    "category": ["運動", "政府", "無障礙"]
+  },
+  {
+    "id": 14,
+    "unit": "新北市政府衛生局",
+    "logo": "./img/caseLogo/新北市政府衛生局.png",
+    "content": "電競王互動網站與遊戲系統",
+    "desc": "開發互動式健康教育平台，結合遊戲機制提升使用者參與度。",
+    "link": "https://health-school.health.ntpc.gov.tw/",
+    "category": ["遊戲", "政府", "互動"]
+  },
+  {
+    "id": 15,
+    "unit": "鈞易賢股份有限公司",
+    "logo": "",
+    "content": "TCG 卡牌交易網站",
+    "desc": "建置卡牌交易平台，整合商品管理、會員系統與金流服務。",
+    "link": "https://www.tcgstore.com.tw/",
+    "category": ["商業", "交易", "平台建置"]
+  },
+  {
+    "id": 16,
+    "unit": "台灣大車隊股份有限公司",
+    "logo": "",
+    "content": "派車系統與生活服務平台",
+    "desc": "整合派車服務與生活功能，提供多元便捷的服務入口。",
+    "link": "https://www.55688life.com.tw/",
+    "category": ["商業", "平台建置"]
+  },
+  {
+    "id": 17,
+    "unit": "永慶房屋仲介股份有限公司",
+    "logo": "",
+    "content": "360 環景看房系統",
+    "desc": "導入雲端架構建置線上看房系統，提升房屋展示與瀏覽體驗。",
+    "link": "https://healthmap.ylshb.gov.tw/",
+    "category": ["商業", "系統整合"]
+  }
+]

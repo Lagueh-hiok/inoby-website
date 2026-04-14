@@ -1,3 +1,12 @@
+// 影片播放
+
+const video = document.getElementById('heroVideo');
+video.addEventListener("canplay", () => {
+    video.play().catch(err => {
+        console.log("影片播放失敗", err);
+    });
+});
+
 
 //- 數字增加動畫
 const numberContainer = document.querySelectorAll(".count-number");
@@ -14,9 +23,6 @@ const numbers = [
     },
 ];
 
-const startTime = Date.now(); //開始時間
-const duration = 15; //每一個單位+1的時候需要的時間
-
 // 開關控制
 let animationStart = false;
 // 開關檢測
@@ -29,6 +35,9 @@ const animationSwitch = () => {
         };
     };
 };
+
+const startTime = Date.now(); //開始時間
+const duration = 15; //每一個單位+1的時候需要的時間
 
 function addUp() {
     // 檢查數字有沒有超過上限 (開關控制)
@@ -63,34 +72,33 @@ if (caseScroll) {
 
     window.addEventListener("scroll", onScroll, { passive: true });
 }
-// --------------------- 履約實績 ----------------------
+// --------------------- 合作夥伴 ----------------------
 function worksItem(item, index) {
     return item.link ? 
-          `<a href="${item.link}" class="works-card" data-slot="${index}" title="${item.title}">
-            <div class="img">
-                <img src="${item.imgurl}" alt="">
-            </div>
-            <div class="info">
-                ${ item.data ? `<p class="date">${item.date}</p>` : ""}
-                <p class="category">${item.category}</p>
-            </div>
-            <h3>${item.title}</h3>
-          </a>`
-          :
-          `<div class="works-card" data-slot="${index}">
-            <div class="img">
-                <img src="${item.imgurl}" alt="">
-            </div>
-            <div class="info">
-                <p class="date">${item.date}</p>
-                <p class="category">${item.category}</p>
-            </div>
-            <h3>${item.title}</h3>
-          </div>`
-          
+        `<a href="${item.link}" class="works-card" data-slot="${index}" title="${item.title}">
+        <div class="img">
+            <img src="${item.imgurl}" alt="">
+        </div>
+        <div class="info">
+            ${ item.data ? `<p class="date">${item.date}</p>` : ""}
+            <p class="category">${item.category}</p>
+        </div>
+        <h3>${item.title}</h3>
+        </a>`
+        :
+        `<div class="works-card" data-slot="${index}">
+        <div class="img">
+            <img src="${item.imgurl}" alt="">
+        </div>
+        <div class="info">
+            <p class="date">${item.date}</p>
+            <p class="category">${item.category}</p>
+        </div>
+        <h3>${item.title}</h3>
+        </div>`
 };
 
-fetch("./json/frontendCase.json")
+fetch("./json/websiteCases.json")
     .then(res => res.json())
     .then((data) => {
         data.forEach((item, index) => {
