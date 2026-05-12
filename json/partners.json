@@ -77,18 +77,9 @@
     "category": ["醫療", "政府", "平台建置"]
   },
   {
-    "id": 12,
-    "unit": "桃園市教育局",
-    "logo": "./img/caseLogo/桃園市教育局.png",
-    "content": "高中多元入學宣導整合網站",
-    "desc": "整合多元入學資訊與宣導內容，提升資訊可讀性與使用體驗。",
-    "link": "https://12basic.tyc.edu.tw/",
-    "category": ["教育", "政府", "無障礙"]
-  },
-  {
     "id": 13,
-    "unit": "新北市政府衛生局",
-    "logo": "./img/caseLogo/新北市政府衛生局.png",
+    "unit": "新北市政府體育局",
+    "logo": "./img/caseLogo/新北市政府體育局.png",
     "content": "全國身心障礙運動會資訊網站",
     "desc": "建置大型運動會資訊平台，整合報名、賽程與活動資訊。",
     "link": "https://www.sport115ntpc.com/",
@@ -102,32 +93,5 @@
     "desc": "開發互動式健康教育平台，結合遊戲機制提升使用者參與度。",
     "link": "https://health-school.health.ntpc.gov.tw/",
     "category": ["遊戲", "政府", "互動"]
-  },
-  {
-    "id": 15,
-    "unit": "鈞易賢股份有限公司",
-    "logo": "",
-    "content": "TCG 卡牌交易網站",
-    "desc": "建置卡牌交易平台，整合商品管理、會員系統與金流服務。",
-    "link": "https://www.tcgstore.com.tw/",
-    "category": ["商業", "交易", "平台建置"]
-  },
-  {
-    "id": 16,
-    "unit": "台灣大車隊股份有限公司",
-    "logo": "",
-    "content": "派車系統與生活服務平台",
-    "desc": "整合派車服務與生活功能，提供多元便捷的服務入口。",
-    "link": "https://www.55688life.com.tw/",
-    "category": ["商業", "平台建置"]
-  },
-  {
-    "id": 17,
-    "unit": "永慶房屋仲介股份有限公司",
-    "logo": "",
-    "content": "360 環景看房系統",
-    "desc": "導入雲端架構建置線上看房系統，提升房屋展示與瀏覽體驗。",
-    "link": "https://healthmap.ylshb.gov.tw/",
-    "category": ["商業", "系統整合"]
   }
 ]

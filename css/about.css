@@ -123,7 +123,7 @@ a, p, span {
   margin-bottom: 0.5rem;
   border-radius: 5px;
   box-sizing: border-box;
-  border: 1px solid #888;
+  border: 1px solid #aaa;
 }
 
 .submit {
@@ -227,7 +227,7 @@ a, p, span {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
   padding: 10px 20px;
   border-radius: 999px;
@@ -237,7 +237,7 @@ a, p, span {
 }
 .btn:hover {
   color: #fff;
-  background-color: #2969A5;
+  background-color: #24598F;
 }
 
 .btns {
@@ -270,6 +270,59 @@ a, p, span {
     padding: 5px 0;
     font-size: 16px;
   }
+}
+
+.toast {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 9999;
+}
+.toast .wrap {
+  width: 600px;
+  height: auto;
+  background-color: #fff;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  padding: 20px 30px;
+  border-radius: 15px;
+  opactify: 1;
+}
+.toast h3 {
+  font-size: 24px;
+  margin-bottom: 1rem;
+  line-height: 1.25;
+}
+.toast p {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 0;
+  line-height: 1.5;
+}
+.toast .btn {
+  color: #fff;
+  float: right;
+}
+.toast .success {
+  color: #527d44;
+}
+.toast .fail {
+  color: #cb4848;
+}
+
+.toast.show {
+  opacity: 1;
+}
+
+.toast.hide {
+  opacity: 0;
 }
 
 .lines {

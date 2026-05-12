@@ -38,7 +38,7 @@
                     <a href="./about.html" title="公司介紹">公司介紹</a>
                 </li>
                 <li class="nav_link link" >
-                    <a href="./partners.html" title="合作夥伴">合作夥伴</a>
+                    <a href="./partners.html" title="實績案例">實績案例</a>
                 </li>
                 <li class="nav_link link" >
                     <a href="./service.html" title="技術服務">技術服務</a>
@@ -66,7 +66,7 @@
                             <a href="./about.html" title="公司介紹">公司介紹</a>
                         </li>
                         <li class="nav-menu_link link" >
-                            <a href="./partners.html" title="合作夥伴">合作夥伴</a>
+                            <a href="./partners.html" title="實績案例">實績案例</a>
                         </li>
                         <li class="nav-menu_link link" >
                             <a href="./service.html" title="技術服務">技術服務</a>
@@ -114,28 +114,29 @@
                     <p>我們樂於傾聽您的需求，並為您提供最合適的數位解決方案。</p>
                 </div>
                 <form id="contactForm" class="contact_form">
-                    <label class="input_label">
+                    <label data-required class="input_label">
                         <p>名稱:</p>
-                        <input type="text" class="input" placeholder="請輸入名稱" />
+                        <input type="text" class="input" name="name" placeholder="請輸入名稱" required/>
                     </label>
                     <label data-required class="input_label">
                         <p>電子信箱:</p>
-                        <input type="email" class="input" placeholder="請輸入電子信箱" required />
+                        <input type="email" class="input" name="email" placeholder="請輸入電子信箱" required />
                     </label>
                     <label data-required class="input_label">
                         <p>選擇服務:</p>
-                        <select class="input">
+                        <select class="input" name="type" required>
                             <option value="">請選擇服務</option>
-                            <option value="體驗後台系統">體驗後台系統</option>
-                            <option value="建立後台管理系統">建立後台管理系統</option>
-                            <option value="系統修復">系統修復</option>
-                            <option value="資料庫建立">資料庫建立</option>
-                            <option value="網頁設計">網頁設計</option>
+                            <option value="backend_demo">體驗後台系統</option>
+                            <option value="backend_build">建立後台管理系統</option>
+                            <option value="system_fix">系統修復</option>
+                            <option value="database_build">資料庫建立</option>
+                            <option value="web_design">網頁設計</option>
+                            <option value="other">其他問題</option>
                         </select>
                     </label>
-                    <label class="input_label">
+                    <label data-required class="input_label">
                         <p>輸入留言:</p>
-                        <textarea class="input" placeholder="請輸入留言"></textarea>
+                        <textarea class="input" name="message" placeholder="請輸入留言" required></textarea>
                     </label>
                     <button type="submit" class="contact_submit submit">送出表單</button>
                 </form>
@@ -162,7 +163,7 @@
                             <a href="./about.html" title="公司介紹">公司介紹</a>
                         </li>
                         <li class="footer_link link">
-                            <a href="./partners.html" title="合作夥伴">合作夥伴</a>
+                            <a href="./partners.html" title="實績案例">實績案例</a>
                         </li>
                         <li class="footer_link link">
                             <a href="./service.html" title="技術服務">技術服務</a>
@@ -204,11 +205,11 @@
         </div>
         <div class="bg"></div>
     </footer>
-
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
     <script type="text/javascript" src="https://unpkg.com/lenis@1.3.8/dist/lenis.min.js"></script> 
     <script type="text/javascript" src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/contact.js"></script>
 </body>
 
 </html>

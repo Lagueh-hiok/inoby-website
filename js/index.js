@@ -72,7 +72,7 @@ if (caseScroll) {
 
     window.addEventListener("scroll", onScroll, { passive: true });
 }
-// --------------------- 合作夥伴 ----------------------
+// --------------------- 實績案例 ----------------------
 function worksItem(item, index) {
     return item.link ? 
         `<a href="${item.link}" class="works-card" data-slot="${index}" title="${item.title}">
