@@ -287,13 +287,16 @@ a, p, span {
   z-index: 9999;
 }
 .toast .wrap {
-  width: 600px;
+  max-width: 600px;
   height: auto;
   background-color: #fff;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
   padding: 20px 30px;
   border-radius: 15px;
   opactify: 1;
+}
+.toast .text {
+  margin-bottom: 0.5rem;
 }
 .toast h3 {
   font-size: 24px;
@@ -306,7 +309,11 @@ a, p, span {
   margin-bottom: 0;
   line-height: 1.5;
 }
+.toast hr {
+  margin: 0.5rem 0;
+}
 .toast .btn {
+  width: 100px;
   color: #fff;
   float: right;
 }
@@ -315,6 +322,20 @@ a, p, span {
 }
 .toast .fail {
   color: #cb4848;
+}
+@media (max-width: 768px) {
+  .toast .wrap {
+    width: 80%;
+  }
+  .toast .btn {
+    font-size: 14px;
+  }
+  .toast h3 {
+    font-size: 20px;
+  }
+  .toast p {
+    font-size: 14px;
+  }
 }
 
 .toast.show {
@@ -350,7 +371,7 @@ a, p, span {
 
 .breadcrumbs {
   display: flex;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2.5rem;
 }
 .breadcrumbs a p {
   color: #888;

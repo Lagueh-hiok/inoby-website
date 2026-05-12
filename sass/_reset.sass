@@ -233,13 +233,15 @@ a, p, span
 	transition: opacity 0.3s ease
 	z-index: 9999
 	.wrap
-		width: 600px
+		max-width: 600px
 		height: auto
 		background-color: #fff
 		box-shadow: 0px 4px 15px rgba(black ,0.1)
 		padding: 20px 30px
 		border-radius: 15px
 		opactify: 1
+	.text
+		margin-bottom: 0.5rem
 	h3
 		font-size: 24px
 		margin-bottom: 1rem
@@ -249,13 +251,26 @@ a, p, span
 		font-weight: 500
 		margin-bottom: 0
 		line-height: 1.5
+	hr
+		margin: 0.5rem 0
 	.btn
+		width: 100px
 		color: #fff
 		float: right
 	.success
 		color: $green
 	.fail
 		color: $red
+	+media-md 
+		.wrap
+			width: 80% 
+		.btn
+			font-size: 14px
+		h3
+			font-size: 20px
+		p	
+			font-size: 14px
+		
 
 .toast.show
 	opacity: 1
@@ -286,7 +301,7 @@ a, p, span
 
 .breadcrumbs
 	display: flex
-	margin-bottom: 1.5rem
+	margin-bottom: 2.5rem
 	a
 		p
 			color: #888
